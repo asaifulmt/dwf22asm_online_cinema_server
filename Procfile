@@ -1,3 +1,3 @@
-release: node_modules/.bin/sequelize db:migrate:status; node_modules/.bin/sequelize db:migrate; node_modules/.bin/sequelize db:seed:all; node_modules/.bin/sequelize db:migrate:status;
+release: npx sequelize db:migrate && npx sequelize db:seed:all
 
 web: node index.js
